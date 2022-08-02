@@ -5,11 +5,14 @@ public class p3{
     System.out.println("Enter the digit: ");
     int n= sc.nextInt();
     System.out.println("Fibonacci series: ");
-    System.out.println("0");
+    System.out.println("0\n1\n1");
     int a=1;
+    int b=1;
     for(int i=1; i<n; i++ ){
-      System.out.println(a);
-      a+=a;
+      int k=a+b;
+      a=b;
+      System.out.println(k); 
+      b=k;
     }
     
   }
